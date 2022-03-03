@@ -16,7 +16,7 @@ const currencyValueInputValidation = [
             if (!val){
                 return true;
             } else {
-                return new RegExp(/^[\d\.]+$/).test(`${val}`);
+                return new RegExp(/^(\d+)?([.]?\d*)?$/).test(`${val}`);
             }
         },
         errorMessage: "Must be a numberic value"
